@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #0A0A0A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content{
+    width: 70%;
+    height: 80vh;
+    background: #2B2B2B;
+    border-radius: 30px;
+    display: flex;
+    margin-right: 3vh;
+    align-items: center;
+}
+#colRegistro{
+    height: 80%;
+    width: 20%;
+    background: #F8F1E7;
+    border-radius: 15px;
+    margin: 3vh;
+}
+#registro{
+    text-align: center;
+    padding: 1vh 4vh;
+    color: #707070;
+    font-size: 20px;
+}
+#colRegistrar{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#titleDiv{
+    text-align: center;
+    font-size: 30px;
+}
+#contentRegister{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sliderBox{
+    text-align: center;
+    width: 10%;
+    background: #F8F1E7;
+    border-radius: 15px;
+    height: 100%;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#slider {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    -webkit-appearance: slider-vertical;
+}
+#btns{
+    display: grid;
+    width: 80%;
+    height: 80%;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+#showBtn{
+    grid-area: 1 / 1 / span 2 / span 3;
+}
+#customBtn{
+    grid-column: 1 / span 2;
+}
