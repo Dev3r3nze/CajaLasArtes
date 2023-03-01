@@ -11,55 +11,62 @@
     <div class="content">
         <div id="colRegistro">
             <div id="registro">
-                <div class="registroText">+10 Campeonato 10:00</div>
+                <div class="registroText">
+                    <ul>
+                        <li class="registroLi">+10 Campeonato 10:00</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="colRegistrar">
             <div id="titleDiv">
                 <p>Campeonato 10:00</p>
+                
             </div>
             <div id="contentRegister">
                 <div id="sliderBox">
-                    <div class="type">+</div>
-
-                    <input type="range" min="1" max="2" value="1" id="slider">
                     <div class="type">-</div>
+                    <input type="range" min="1" max="2" value="1" id="slider">
+                    <div class="type">+</div>
                 </div>
-                <div id="bnts">
-                    <div id="showBtn">...</div>
-                    <div id="customBtn">123</div>
-                    <div class="btn numBtn">1</div>
-                    <div class="btn numBtn">2</div>
-                    <div class="btn numBtn">3</div>
-                    <div class="btn numBtn">4</div>
-                    <div class="btn numBtn">5</div>
-                    <div class="btn numBtn">6</div>
-                    <div class="btn numBtn">7</div>
-                    <div class="btn numBtn">8</div>
-                    <div class="btn numBtn">9</div>
-                    <div class="btn extraBtn">0</div>
-                    <div class="btn extraBtn">-></div>
-                    <div class="btn extraBtn"><-</div>
+                <div id="btns">
+                    <div id="showBtn" class="numBtn"><p id="numSelect"></p></div>
+                    <input class="numBtn" type="num" id="customNum" placeholder="123">
+                    <div class="numBtn" id="btn1">1</div>
+                    <div class="numBtn" id="btn2">2</div>
+                    <div class="numBtn" id="btn3">3</div>
+                    <div class="numBtn" id="btn4">4</div>
+                    <div class="numBtn" id="btn5">5</div>
+                    <div class="numBtn" id="btn6">6</div>
+                    <div class="numBtn" id="btn7">7</div>
+                    <div class="numBtn" id="btn8">8</div>
+                    <div class="numBtn" id="btn9">9</div>
+                    <div class="numBtn" id="btn0">0</div>
+                    <div class="numBtn extraBtn" id="btnEnter">-></div>
+                    <div class="numBtn extraBtn" id="btnDelete"><-</div>
                 </div>
             </div>
             <div id="stats">
-                <div class="statText">Campeonato 10:00</div>
-                <div class="statText">Vendido 20 entradas</div>
-                <div class="statText">Recaudado 100 €</div>
+                <div class="colStat"><div class="statText"><p id="campeonatoStat">Campeonato 10:00</p></div></div>
+                <div class="colStat">
+                    <div class="statText"><p id="vendidoStat">Vendido 20 entradas</p></div>
+                    <div class="statText"><p id="recaudadoStat">Recaudado 100 €</p> </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="sliderCampeonatos">
-        <div class="colSlider"></div>
+        <div class="colSlider" id="inputSliderCampeonatos">
+            <input type="range" min="1" max="5" value="1" id="slider">
+        </div>
         <div class="colSlider">
-            <div class="campeonatoText">10:00</div>
-            <div class="campeonatoText">10:00</div>
-            <div class="campeonatoText">10:00</div>
-            <div class="campeonatoText">10:00</div>
-            <div class="campeonatoText">10:00</div>
+            <div class="campeonatoText">Campeonato 10:00</div>
+            <div class="campeonatoText">Campeonato 10:00</div>
+            <div class="campeonatoText">Campeonato 10:00</div>
+            <div class="campeonatoText">Campeonato 10:00</div>
+            <div class="campeonatoText">Campeonato 10:00</div>
         </div>
     </div>
-
     
 </body>
 </html>

@@ -11,20 +11,23 @@ body{
     height: 100vh;
 }
 .content{
-    width: 70%;
-    height: 80vh;
     background: #2B2B2B;
+    width: 80%;
+    height: 80vh;
     border-radius: 30px;
     display: flex;
     margin-right: 3vh;
     align-items: center;
+    box-shadow: 0px 0px 100px #0A0A0A;
 }
+
 #colRegistro{
     height: 80%;
     width: 20%;
     background: #F8F1E7;
     border-radius: 15px;
     margin: 3vh;
+    box-shadow: 5px 5px 16px #191919;
 }
 #registro{
     text-align: center;
@@ -34,7 +37,7 @@ body{
 }
 #colRegistrar{
     height: 80%;
-    width: 70%;
+    width: 73%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,6 +63,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 1vh;
+    font-size: 30px;
+    box-shadow: 5px 5px 16px #191919;
 }
 #slider {
     width: 100%;
@@ -69,13 +75,113 @@ body{
 }
 #btns{
     display: grid;
-    width: 80%;
+    width: 100%;
     height: 80%;
     grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 1vh;
 }
 #showBtn{
     grid-area: 1 / 1 / span 2 / span 3;
+    background: #BE9248;
 }
-#customBtn{
-    grid-column: 1 / span 2;
+.numBtn{
+    background-color: #FAFEFE;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 40px;
+    color: #0A0A0A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 16px #191919;
+}
+.extraBtn{
+    background: #D2AE68;
+}
+#customNum{
+    grid-column: 1 / span 3;
+    background: #D2AE68;
+    border: 0;
+    border-radius: 15px;
+    padding: 12px 20px;
+    font-size: 14px;
+
+}
+#btn1{
+    grid-area: 3/4;
+}
+#btn2{
+    grid-area: 3/5;
+}
+#btn3{
+    grid-area: 3/6;
+}
+#btn4{
+    grid-area: 2/4;
+}
+#btn5{
+    grid-area: 2/5;
+}
+#btn6{
+    grid-area: 2/6;
+}
+#btn7{
+    grid-area: 1/4;
+}
+#btn8{
+    grid-area: 1/5;
+}
+#btn9{
+    grid-area: 1/6;
+}
+#btn0{
+    grid-area: 1/7;
+}
+#btnEnter{
+    grid-area: 2/7;
+}
+#btnDelete{
+    grid-area: 3/7;
+}
+
+#stats{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.statText{
+    float: left;
+}
+#recaudadoStat{
+    margin-left: 1vh;
+}
+.sliderCampeonatos{
+    height: 80%;
+    width: 15%;
+}
+.colSlider{
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    justify-content: space-between;
+}
+#inputSliderCampeonatos{
+    width: 20%;
+}
+
+.numBtn:hover{
+    background-color: #fafefeab;
+}
+
+.numBtn:active{
+    transform: scale(1.05);
+}
+.extraBtn:hover,#customNum:hover{
+    background: #a18751;
+}
+#showBtn:active{
+    transform: scale(1);
+
 }
