@@ -12,7 +12,7 @@
         <div id="colRegistro">
             <div id="registro">
                 <div class="registroText">
-                    <ul>
+                    <ul id="registroUl">
                         <li class="registroLi">+10 Campeonato 10:00</li>
                     </ul>
                 </div>
@@ -24,33 +24,29 @@
                 
             </div>
             <div id="contentRegister">
-                <div id="sliderBox">
-                    <div class="type">-</div>
-                    <input type="range" min="1" max="2" value="1" id="slider">
-                    <div class="type">+</div>
-                </div>
+                
                 <div id="btns">
                     <div id="showBtn" class="numBtn"><p id="numSelect"></p></div>
-                    <input class="numBtn" type="num" id="customNum" placeholder="123">
-                    <div class="numBtn" id="btn1">1</div>
-                    <div class="numBtn" id="btn2">2</div>
-                    <div class="numBtn" id="btn3">3</div>
-                    <div class="numBtn" id="btn4">4</div>
-                    <div class="numBtn" id="btn5">5</div>
-                    <div class="numBtn" id="btn6">6</div>
-                    <div class="numBtn" id="btn7">7</div>
-                    <div class="numBtn" id="btn8">8</div>
-                    <div class="numBtn" id="btn9">9</div>
-                    <div class="numBtn" id="btn0">0</div>
-                    <div class="numBtn extraBtn" id="btnEnter">-></div>
-                    <div class="numBtn extraBtn" id="btnDelete"><-</div>
+                    <input class="numBtn" type="num" onchange="Numerar(value)" id="customNum" placeholder="123">
+                    <div class="numBtn" id="btn1" onclick="Numerar(1)">1</div>
+                    <div class="numBtn" id="btn2" onclick="Numerar(2)">2</div>
+                    <div class="numBtn" id="btn3" onclick="Numerar(3)">3</div>
+                    <div class="numBtn" id="btn4" onclick="Numerar(4)">4</div>
+                    <div class="numBtn" id="btn5" onclick="Numerar(5)">5</div>
+                    <div class="numBtn" id="btn6" onclick="Numerar(6)">6</div>
+                    <div class="numBtn" id="btn7" onclick="Numerar(7)">7</div>
+                    <div class="numBtn" id="btn8" onclick="Numerar(8)">8</div>
+                    <div class="numBtn" id="btn9" onclick="Numerar(9)">9</div>
+                    <div class="numBtn" id="btn0" onclick="Numerar(10)">10</div>
+                    <div class="numBtn extraBtn" id="btnEnter" onclick="Confirmar()">-></div>
+                    <div class="numBtn extraBtn" id="btnDelete" onclick="Borrar()"><-</div>
                 </div>
             </div>
             <div id="stats">
                 <div class="colStat"><div class="statText"><p id="campeonatoStat">Campeonato 10:00</p></div></div>
                 <div class="colStat">
-                    <div class="statText"><p id="vendidoStat">Vendido 20 entradas</p></div>
-                    <div class="statText"><p id="recaudadoStat">Recaudado 100 €</p> </div>
+                    <div class="statText"><p id="vendidoStat">Vendido 0 entradas</p></div>
+                    <div class="statText"><p id="recaudadoStat">Recaudado 0 €</p> </div>
                 </div>
             </div>
         </div>
@@ -67,6 +63,7 @@
             <div class="campeonatoText">Campeonato 10:00</div>
         </div>
     </div>
+    <script src="app.js"></script>
     
 </body>
 </html>

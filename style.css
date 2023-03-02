@@ -28,6 +28,8 @@ body{
     border-radius: 15px;
     margin: 3vh;
     box-shadow: 5px 5px 16px #191919;
+    overflow: auto;
+
 }
 #registro{
     text-align: center;
