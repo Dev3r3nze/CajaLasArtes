@@ -13,7 +13,6 @@
             <div id="registro">
                 <div class="registroText">
                     <ul id="registroUl">
-                        <li class="registroLi">+10 Campeonato 10:00</li>
                     </ul>
                 </div>
             </div>
@@ -43,7 +42,7 @@
                 </div>
             </div>
             <div id="stats">
-                <div class="colStat"><div class="statText"><p id="campeonatoStat">Campeonato 10:00</p></div></div>
+                <div class="colStat"><div class="statText"><p id="ventaTotalStat">Total:</p></div></div>
                 <div class="colStat">
                     <div class="statText"><p id="vendidoStat">Vendido 0 entradas</p></div>
                     <div class="statText"><p id="recaudadoStat">Recaudado 0 €</p> </div>
@@ -53,14 +52,14 @@
     </div>
     <div class="sliderCampeonatos">
         <div class="colSlider" id="inputSliderCampeonatos">
-            <input type="range" min="1" max="5" value="1" id="slider">
+            <input type="range" min="1" max="5" value="1" id="slider" onchange="CambioCampeonato(value)">
         </div>
         <div class="colSlider">
-            <div class="campeonatoText">Campeonato 10:00</div>
-            <div class="campeonatoText">Campeonato 10:00</div>
-            <div class="campeonatoText">Campeonato 10:00</div>
-            <div class="campeonatoText">Campeonato 10:00</div>
-            <div class="campeonatoText">Campeonato 10:00</div>
+            <div class="campeonatoText"><p>Campeonato 19:00</p></div>
+            <div class="campeonatoText"><p>Campeonato 17:00</p></div>
+            <div class="campeonatoText"><p>Campeonato 15:00</p></div>
+            <div class="campeonatoText"><p>Campeonato 13:00</p></div>
+            <div class="campeonatoText"><p>Campeonato 10:00</p></div>
         </div>
     </div>
     <script src="app.js"></script>
